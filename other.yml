@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+#Nginx Service 
+web:
+  image:  nginx:latest
+  container_name: nginx
+  ports:
+    - "8080:80"
+  volumes:
+    - ./nginx:/etc/nginx/conf.d
+    - ./app:/var/www/html
+  depends_on:
+    - php 
+  networks:
+    - app-network
+
+#PHP-FPM Service
+
+
+
+#Ootro Ejemplo
+
+volumes:
+  db-data:
+
+#Si se deja asi el db-data: se asignará un valor de NUÑÑ  

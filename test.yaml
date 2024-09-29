@@ -1,0 +1,26 @@
+key: Hola mundo
+
+
+
+scrip: |
+  hola
+  hola
+  testort
+
+#Definición de listas
+
+items:
+  - item1
+  - item2
+  - item3
+
+
+items2:
+  - item1: Hola
+  - item2: Hola
+  - item3: Hola
+
+#Herramientas para la verificación del código YAML
+#YAML Lint 
+
+
