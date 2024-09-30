@@ -14,3 +14,10 @@ jobs:
     steps: #unidad más pequeña que nos van a permitir desarrollar diferentes acciones 
     - name: Hola mundo #Nombre representativo del Step
       run: echo "Hola mundo" #Correr un comando
+
+  other:
+      runs-on: ubuntu-latest
+
+      steps: #unidad más pequeña que nos van a permitir desarrollar diferentes acciones 
+        - name: ls #Nombre representativo del Step
+          run: ls -al #Correr un comando
