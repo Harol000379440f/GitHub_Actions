@@ -1,3 +1,16 @@
 #Definir nombre representativo para el workflow
 
-name: Hola Mundo 
+name: Hola Mundo #Nombre del workFlow 
+
+on: [push] #Evento --> cuando haga push al repo
+
+
+#Nos van a permitir ejecutar, todo lo que queremos dentro de un servidor
+jobs:
+  hola: #Nombre del job
+    runs-on: ubuntu-latest #SO de la VM
+
+
+    steps: #unidad más pequeña que nos van a permitir desarrollar diferentes acciones 
+    - name: Hola mundo #Nombre representativo del Step
+      run: echo "Hola mundo" #Correr un comando
