@@ -2,9 +2,13 @@
 
 name: Hola Mundo #Nombre del workFlow 
 
-on: [push, pull_request] #Evento --> cuando haga push al repo
-
-
+on: #[push, pull_request] #Evento --> cuando haga push al repo
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 #Nos van a permitir ejecutar, todo lo que queremos dentro de un servidor
 jobs:
   hola: #Nombre del job
