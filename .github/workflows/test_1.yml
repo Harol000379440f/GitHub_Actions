@@ -33,8 +33,7 @@ jobs:
       needs: hola
       steps: #unidad más pequeña que nos van a permitir desarrollar diferentes acciones 
         - name: Checkout
-          uses: actions/checkout@v4.2.0
-            
+          uses: actions/checkout@v4.2.0           
         - name: ls #Nombre representativo del Step
           run: ls -al #Correr un comando
 
