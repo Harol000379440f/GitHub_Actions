@@ -2,9 +2,13 @@
 
 name: Hola Mundo #Nombre del workFlow 
 
-on: [push] #Evento --> cuando haga push al repo
-
-
+on: #[push, pull_request] #Evento --> cuando haga push al repo
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 #Nos van a permitir ejecutar, todo lo que queremos dentro de un servidor
 jobs:
   hola: #Nombre del job
@@ -28,6 +32,8 @@ jobs:
       runs-on: ubuntu-latest
       needs: hola
       steps: #unidad más pequeña que nos van a permitir desarrollar diferentes acciones 
+        - name: Checkout
+          uses: actions/checkout@v4.2.0           
         - name: ls #Nombre representativo del Step
           run: ls -al #Correr un comando
 
