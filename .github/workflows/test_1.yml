@@ -23,7 +23,7 @@ jobs:
       run:  touch hola.txt
 
     - name: set text
-      run:  echo "Hola Mundo" >> hola.txt
+      run:  echo "Hola Mundo" >> hola.txt #O no
 
     - name:  Read file
       run:  cat hola.txt 
@@ -42,5 +42,4 @@ jobs:
           uses: actions/setup-node@v4.0.4
 
         - name: node version
-          run: node --version
-          
+          run: node --version 
