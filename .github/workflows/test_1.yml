@@ -38,3 +38,9 @@ jobs:
           run: ls -al #Correr un comando
 
 #para generar dependencias entre los Jobs, se tiliza la directiva needs: la cual se le puede pasar el nombre del job 
+        - name: Setup Node.js environment
+          uses: actions/setup-node@v4.0.4
+
+        - name: node version
+          run: node --version
+          
